@@ -5,28 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/normalize.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-          <img src="./images/logo.png" alt="Logo">
-          <h1>Mi Portafolio</h1>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="./index.html">Sobre mí</a></li>
-            <li><a href="./portafolio.html">Portafolio</a></li>
-            <li><a href="./curriculum.html">Curriculum</a></li>
-          </ul>
-        </nav>
-    </header>
+
+    {{> header}}
+    
+    {{> navbar}}
 
     <section>
       <h2>SOBRE MI</h2>
         <div class="sobremi">
-          <img src="./images/foto.png" alt="Mi foto de perfil">
+          <img src="../images/foto.png" alt="Mi foto de perfil">
             <div class="parrafo1">
               <p>Mi nombre es Wrener Estuardo Robles Samayoa, estudiante universitario de ingenieria en sistemas. 
                 Me considero una persona organizada y creativa, con una gran capacidad de adaptación y un apetito constante por el aprendizaje. 
@@ -47,8 +38,8 @@
     <section>
       <div class="botom">
         <ul>
-          <a href="./portafolio.html">Saber mas sobre mis proyectos</a>
-          <a href="./curriculum.html">Mas sobre mi</a>
+          <li><a href="/portafolio">Saber mas sobre mis proyectos</a></li>
+          <li><a href="/curriculum">Mas sobre mi</a></li>
         </ul>
       </div>
     </section>
@@ -82,5 +73,8 @@
         </div>
       </div>
     </section>
+
+    {{> footer}}
+
 </body>
 </html>
