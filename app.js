@@ -16,32 +16,27 @@ app.use(express.static('public'))
 
 //enviando argumentos a home
 app.get('/', (req, res) => {
-    res.render('home', {
-        nombre: 'Wrener Robles',
-        titulo: 'Portafolio Digital'
-    })
+    res.render('home')
+})
+
+app.get('/sobremi', (req, res) => {
+    res.render('sobremi')
 })
 
 app.get('/portafolio', (req, res) => {
-    res.render('portafolio', {
-        nombre: 'Wrener Robles',
-        titulo: 'Portafolio Digital'
-    })
+    res.render('portafolio')
 })
 
 app.get('/curriculum', (req, res) => {
-    res.render('curriculum', {
-        nombre: 'Wrener Robles',
-        titulo: 'Portafolio Digital'
-    })
+    res.render('curriculum')
 })
 
-app.get('/portafolio', (req, res) => {
-    res.sendFile(__dirname + '/public/portafolio.html')
+app.get('/habilidades', (req, res) => {
+    res.render('habilidades')
 })
 
-app.get('/curriculum', (req, res) => {
-    res.sendFile(__dirname + '/public/curriculum.html')
+app.get('/cursos', (req, res) => {
+    res.render('cursos')
 })
 
 app.get('*', (req, res) => {

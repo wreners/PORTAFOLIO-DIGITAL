@@ -1,107 +1,198 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="../assets/css/estilos.css">
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-</head>
-<body>
-    
-    {{> header}}
-    
-    {{> navbar}}
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Portafolio</title>
+        <link rel="stylesheet" href="../assets/css/estilos.css">
+        <link rel="stylesheet" href="../assets/css/normalize.css">
+    </head>
+    <body>
 
-    <section>
-        <h2>PORTAFOLIO DE MIS PROYECTOS</h2>
-    </section>
-    <main>
-        <div class="project">
-            <h2>Proyecto 1 (Windows Inspector)</h2>
-            <p>
-                "Windows Inspector" es una aplicación de escritorio que brinda una interfaz centralizada y sencilla de usar para 
-                acceder a diversas herramientas de monitoreo, análisis y gestión del sistema operativo Windows. Desarrollada en 
-                C# utilizando Windows Forms, la aplicación ofrece funcionalidades clave como la verificación de la versión de Windows, 
-                la identificación del hardware y software instalado, el listado y finalización de procesos, el monitoreo de recursos 
-                del sistema en tiempo real, y la visualización de las conexiones de red activas. "Windows Inspector" se enfoca en 
-                proporcionar a los usuarios y administradores de sistemas una herramienta integral para obtener un mejor control y 
-                visibilidad sobre el estado y funcionamiento de su entorno operativo Windows, facilitando la identificación y resolución 
-                de problemas.
-            </p>
-            <div class="project-images">
-                <img src="../images/p1-1.png" alt="Imagen 1">
-                <img src="../images/p1-2.png" alt="Imagen 2">
-            </div>
-            <a href="../portafolio/pro_os.pdf" class="project-link">Ver documentación completa</a>
-        </div>
-        <div class="project">
-            <h2>Proyecto 2 (Calculadora)</h2>
-            <p>
-                Este es un mini proyecto que consiste en el desarrollo de una calculadora básica en Java. La calculadora tiene una 
-                interfaz de usuario sencilla y permite realizar las operaciones matemáticas fundamentales como suma, resta, 
-                multiplicación y división. El objetivo del proyecto es que los estudiantes pongan en práctica los conceptos aprendidos 
-                en Programación II, como la creación de interfaces gráficas de usuario, el manejo de eventos y la lógica de programación. 
-                A través de este proyecto, se busca que los estudiantes adquieran habilidades en el diseño, codificación, pruebas y 
-                documentación de aplicaciones Java orientadas a escritorio, fomentando el desarrollo de competencias como la resolución de 
-                problemas, el pensamiento lógico y el trabajo en equipo.
-            </p>
-            <div class="project-images">
-                <img src="../images/p2.png" alt="Imagen 3">
-            </div>
-            <a href="../portafolio/Manual de usuario Mini Proyecto calculadora.pdf" class="project-link">Ver documentación completa</a>
-        </div>
-        <div class="project">
-            <h2>Proyecto 3 (Totito)</h2>
-            <p>
-                Este proyecto consiste en el desarrollo de un juego de Totito (Tres en Raya) utilizando Java, con el objetivo de que 
-                los estudiantes pongan en práctica los conceptos de Programación II, como la creación de interfaces gráficas, el 
-                manejo de eventos y la lógica de programación. A través de este mini proyecto, se busca que los estudiantes desarrollen 
-                habilidades en el diseño, codificación, pruebas y documentación de aplicaciones Java orientadas a escritorio, fomentando 
-                el desarrollo de competencias como la resolución de problemas, el pensamiento lógico, la toma de decisiones estratégicas 
-                y el trabajo en equipo.
-            </p>
-            <div class="project-images">
-                <img src="../images/p3.png" alt="Imagen 5">
-                <img src="../images/p3-2.png" alt="Imagen 6">
-            </div>
-            <a href="../portafolio/Juego de Totito en Java.pdf" class="project-link">Ver documentación completa</a>
-        </div>
-        <div class="project">
-            <h2>Proyecto 4 (Calc. Derivadas e Integrales)</h2>
-            <p>
-                Este proyecto de Cálculo II consiste en el desarrollo de una aplicación Java que permite calcular derivadas e 
-                integrales de funciones, con 6 paneles que realizan los cálculos de diferentes teoremas vistos en clase, con el 
-                objetivo de que los estudiantes pongan en práctica los conceptos de cálculo aprendidos y amplíen sus habilidades 
-                de programación, permitiéndoles integrar los campos de matemáticas y computación, al tiempo que logran ideas más 
-                claras sobre los teoremas y adquieren mayores conocimientos informáticos.
-            </p>
-            <div class="project-images">
-                <img src="../images/p4-1.png" alt="Imagen 7">
-                <img src="../images/p4-2.png" alt="Imagen 8">
-            </div>
-            <a href="../portafolio/proyecto calculo ii.pdf" class="project-link">Ver documentación completa</a>
-        </div>
-        <div class="project">
-            <h2>Proyecto 5 (Bancopoly)</h2>
-            <p>
-                El proyecto Bancopoly consiste en el desarrollo de un programa en Java que simula el funcionamiento del juego de mesa 
-                Monopoly, donde el objetivo es poner en práctica los conceptos de programación aprendidos en el curso, mediante la 
-                creación de un juego que permite a los jugadores obtener ganancias en dinero y propiedades a través de la compra y 
-                gestión de departamentos, compañías de transporte y servicios, según las reglas definidas, lo cual permitió a los 
-                estudiantes integrar sus conocimientos de programación y matemáticas, desarrollar habilidades técnicas y de resolución 
-                de problemas, y entender de manera más práctica la mecánica del juego.
-            </p>
-            <div class="project-images">
-                <img src="../images/p5-1.png" alt="Imagen 9">
-                <img src="../images/p5-2.png" alt="Imagen 10">
-            </div>
-            <a href="../portafolio/bancopoly.pdf" class="project-link">Ver documentación completa</a>
-        </div>
-    </main>
+        {{> header}}
 
-    {{> footer}}
-    
-</body>
+        {{> navbar}}
+
+        <section>
+            <h2>PORTAFOLIO DE MIS PROYECTOS</h2>
+        </section>
+        <main>
+            <div class="project">
+                <h2>Proyecto 1 (Bancopoly)</h2>
+                <p>
+                    El proyecto Bancopoly consiste en el desarrollo de un
+                    programa en Java que simula el funcionamiento del juego de
+                    mesa
+                    Monopoly, donde el objetivo es poner en práctica los
+                    conceptos de programación aprendidos en el curso, mediante
+                    la
+                    creación de un juego que permite a los jugadores obtener
+                    ganancias en dinero y propiedades a través de la compra y
+                    gestión de departamentos, compañías de transporte y
+                    servicios, según las reglas definidas, lo cual permitió a
+                    los
+                    estudiantes integrar sus conocimientos de programación y
+                    matemáticas, desarrollar habilidades técnicas y de
+                    resolución
+                    de problemas, y entender de manera más práctica la mecánica
+                    del juego.
+                </p>
+                <div class="project-images">
+                    <img src="../images/p5-1.png" alt="Imagen 9">
+                    <img src="../images/p5-2.png" alt="Imagen 10">
+                </div>
+                <section class="botom">
+                    <ul>
+                        <li>
+                            <a href="../portafolio/bancopoly.pdf"
+                                target="_blank">Ver
+                                documentación completa</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1hGX6auiM1VsNDIQhdsRR4Uk1ZVN-Du2F/view?usp=sharing"
+                                target="_blank">Ver
+                                video</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="project">
+                <h2>Proyecto 2 (Calc. Derivadas e Integrales)</h2>
+                <p>
+                    Este proyecto de Cálculo II consiste en el desarrollo de una
+                    aplicación Java que permite calcular derivadas e
+                    integrales de funciones, con 6 paneles que realizan los
+                    cálculos de diferentes teoremas vistos en clase, con el
+                    objetivo de que los estudiantes pongan en práctica los
+                    conceptos de cálculo aprendidos y amplíen sus habilidades
+                    de programación, permitiéndoles integrar los campos de
+                    matemáticas y computación, al tiempo que logran ideas más
+                    claras sobre los teoremas y adquieren mayores conocimientos
+                    informáticos.
+                </p>
+                <div class="project-images">
+                    <img src="../images/p4-1.png" alt="Imagen 7">
+                    <img src="../images/p4-2.png" alt="Imagen 8">
+                </div>
+                <section class="botom">
+                    <ul>
+                        <li>
+                            <a href="../portafolio/proyecto calculo ii.pdf"
+                                target="_blank">Ver
+                                documentación completa</a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1X2PpcbwKEraX0reV1yRmCf5XqyfODL57/view?usp=sharing"
+                                target="_blank">Ver
+                                video</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="project">
+                <h2>Proyecto 3 (Windows Inspector)</h2>
+                <p>
+                    "Windows Inspector" es una aplicación de escritorio que
+                    brinda una interfaz centralizada y sencilla de usar para
+                    acceder a diversas herramientas de monitoreo, análisis y
+                    gestión del sistema operativo Windows. Desarrollada en
+                    C# utilizando Windows Forms, la aplicación ofrece
+                    funcionalidades clave como la verificación de la versión de
+                    Windows,
+                    la identificación del hardware y software instalado, el
+                    listado y finalización de procesos, el monitoreo de recursos
+                    del sistema en tiempo real, y la visualización de las
+                    conexiones de red activas. "Windows Inspector" se enfoca en
+                    proporcionar a los usuarios y administradores de sistemas
+                    una herramienta integral para obtener un mejor control y
+                    visibilidad sobre el estado y funcionamiento de su entorno
+                    operativo Windows, facilitando la identificación y
+                    resolución
+                    de problemas.
+                </p>
+                <div class="project-images">
+                    <img src="../images/p1-1.png" alt="Imagen 1">
+                    <img src="../images/p1-2.png" alt="Imagen 2">
+                </div>
+                <section class="botom">
+                    <ul>
+                        <li>
+                            <a href="../portafolio/pro_os.pdf"
+                                target="_blank">Ver documentación completa</a>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+            <div class="project">
+                <h2>Proyecto 4 (Calculadora)</h2>
+                <p>
+                    Este es un mini proyecto que consiste en el desarrollo de
+                    una calculadora básica en Java. La calculadora tiene una
+                    interfaz de usuario sencilla y permite realizar las
+                    operaciones matemáticas fundamentales como suma, resta,
+                    multiplicación y división. El objetivo del proyecto es que
+                    los estudiantes pongan en práctica los conceptos aprendidos
+                    en Programación II, como la creación de interfaces gráficas
+                    de usuario, el manejo de eventos y la lógica de
+                    programación.
+                    A través de este proyecto, se busca que los estudiantes
+                    adquieran habilidades en el diseño, codificación, pruebas y
+                    documentación de aplicaciones Java orientadas a escritorio,
+                    fomentando el desarrollo de competencias como la resolución
+                    de
+                    problemas, el pensamiento lógico y el trabajo en equipo.
+                </p>
+                <div class="project-images">
+                    <img src="../images/p2.png" alt="Imagen 3">
+                </div>
+                <section class="botom">
+                    <ul>
+                        <li>
+                            <a
+                                href="../portafolio/Manual de usuario Mini Proyecto calculadora.pdf"
+                                target="_blank">Ver
+                                documentación completa</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <div class="project">
+                <h2>Proyecto 5 (Totito)</h2>
+                <p>
+                    Este proyecto consiste en el desarrollo de un juego de
+                    Totito (Tres en Raya) utilizando Java, con el objetivo de
+                    que
+                    los estudiantes pongan en práctica los conceptos de
+                    Programación II, como la creación de interfaces gráficas, el
+                    manejo de eventos y la lógica de programación. A través de
+                    este mini proyecto, se busca que los estudiantes desarrollen
+                    habilidades en el diseño, codificación, pruebas y
+                    documentación de aplicaciones Java orientadas a escritorio,
+                    fomentando
+                    el desarrollo de competencias como la resolución de
+                    problemas, el pensamiento lógico, la toma de decisiones
+                    estratégicas
+                    y el trabajo en equipo.
+                </p>
+                <div class="project-images">
+                    <img src="../images/p3.png" alt="Imagen 5">
+                    <img src="../images/p3-2.png" alt="Imagen 6">
+                </div>
+                <section class="botom">
+                    <ul>
+                        <li>
+                            <a href="../portafolio/Juego de Totito en Java.pdf"
+                                target="_blank">Ver
+                                documentación completa</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>            
+        </main>
+
+        {{> footer}}
+
+    </body>
 </html>

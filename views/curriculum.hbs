@@ -1,25 +1,113 @@
+<!-- curriculum.hbs -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portafolio</title>
+    <title>Currículum - Wrener Robles</title>
     <link rel="stylesheet" href="../assets/css/estilos.css">
     <link rel="stylesheet" href="../assets/css/normalize.css">
 </head>
 <body>
 
     {{> header}}
-    
+
     {{> navbar}}
 
-    <section>
+
         <h2>MI CURRICULUM</h2>
-    </section>
-    <div class="pdf-container">
-        <iframe class="pdf-viewer" title="curriculum" src="../portafolio/CURRICULUM TERMINADO.pdf" frameborder="0"></iframe>
-    </div>
+        <h3>Formación Académica</h3>
+        <section class="curriculum">
+            <ul>
+                <li>
+                    <strong>Ingeniería en Sistemas</strong> <br>
+                    Universidad Mariano Gálvez, Sololá <br>
+                    Cursando 8vo semestre
+                </li>
+            </ul>
+            <ul>
+                    <li>
+                    <strong>Bachiller en Diseño Gráfico</strong> <br>
+                    Colegio Integral Sololateco, Sololá <br>
+                    01/2017 - 10/2018
+                </li>
+            </ul>
+        </section>
+
+            <h3>Experiencia Laboral</h3>
+        <section class="curriculum">
+            <ul>
+                <li>
+                    <strong>Inspector de Saneamiento Ambiental</strong> <br>
+                    ENATESARO, Cabricán, Quetzaltenango <br>
+                    01/2023 - 11/2023
+                </li>
+                <li>
+                    <strong>Diseñador Gráfico</strong> <br>
+                    Stickers, Sololá <br>
+                    03/2019 - 05/2019
+                </li>
+                <li>
+                    <strong>Gerente Interino</strong> <br>
+                    Ferroceramica aprópielas de Dios, Argueta, Sololá <br>
+                    11/2021 - 01/2022
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <strong>Digitador/Anotador</strong> <br>
+                    Centro de Salud, Concepción, Sololá (Contratado por INCAP) <br>
+                    02/2023 - 04/2023
+                </li>
+                <li>
+                    <strong>Vendedor/Promotor</strong> <br>
+                    Sisu Shopping / Comercializadora Franco, Sololá <br>
+                    05/2023 - 08/2023
+                </li>
+                <li>
+                    <strong>UPS Inspector de Saneamiento Ambiental</strong> <br>
+                    Centro de Salud de Cantel, Quetzaltenango <br>
+                    09/2023 - 11/2023
+                </li>
+            </ul>
+        </section>
+
+            <h3>Referencias</h3>
+        <section class="curriculum">
+            <ul>
+                <li>
+                    <strong>Daniela Franco</strong> <br>
+                    Dueña / Gerente de Sisu Shopping <br>
+                    Teléfono: 4240-5493 <br>
+                    E-mail: francooooood@gmail.com
+                </li>
+                <li>
+                    <strong>Merzi Julia Caniz</strong> <br>
+                    Gerente de Ferroceramica aprópielas de Dios <br>
+                    Teléfono: 4810-4513 <br>
+                    E-mail: ferroceramicaprd@gmail.com
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <strong>EP. Rebeca Gonzalez</strong> <br>
+                    Encargada de Territorio, Centro de Salud de Concepción <br>
+                    Teléfono: 4224-4632
+                </li>
+                <li>
+                    <strong>Lic. Mariflor Castro</strong> <br>
+                    Jefa de enfermería, Área de Salud de Sololá <br>
+                    Teléfono: 5137-7810 <br>
+                    E-mail: mariflor.solola@gmail.com
+                </li>
+            </ul>
+        </section>
+
+        <section class="botom">
+            <ul>
+                <li><a href="../portafolio/CURRICULUM TERMINADO.pdf" target="_blank">Ver Curriculum Completo</a></li>
+            </ul>
+        </section>
 
     {{> footer}}
 
