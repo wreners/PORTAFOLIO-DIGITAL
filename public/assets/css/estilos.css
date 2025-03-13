@@ -30,14 +30,14 @@ body {
 }
 
 .inicio .botom li {
-    display: inline; /* Mostrar elementos en línea */
-    margin: 0 15px; /* Espaciado entre enlaces */
+    display: inline;
+    margin: .5em;
 }
 
 .inicio .botom a {
-    text-decoration: none; /* Sin subrayado */
-    color: snow; /* Color del texto */
-    font-weight: bold; /* Texto en negrita */
+    text-decoration: none;
+    color: snow;
+    font-weight: bold;
 }
 
 h1 {
@@ -62,6 +62,7 @@ h3 {
 p {
     color: snow;
     font-size: 30px;
+    text-align: justify;
 }
 
 body {
@@ -145,7 +146,7 @@ body {
     transition: transform 0.5s ease, visibility 0.5s ease;
     background: #0077b6;
     height: 100%;
-    width: 20em;
+    width: 16em;
     position: fixed;
     top: 0;
     right: 0;
@@ -164,14 +165,14 @@ body {
 
 ul.links {
     list-style: none;
-    font-size: 1.3em;
+    font-size: 1.7em;
     padding: 0;
-    margin: 0;
+    margin: .3em;
     cursor: pointer;
 }
 
 ul.links li {
-    padding: 20px;
+    padding: 0;
     text-align: center;
     border-radius: 50px;
 }
@@ -185,12 +186,17 @@ ul.links li:hover {
 }
 
 ul.links li a {
+    display: flex;
+    justify-content: center;
+    padding: .6em .5em;
+    margin-block: .3em;
     text-decoration: none;
     color: #fff;
 }
 
 .close {
     display: block;
+    font-size: 1.3em;
     text-align: left;
     padding: 10px;
     color: #fff;
@@ -237,15 +243,17 @@ section.footer h2 {
 
 .botom ul {
     list-style-type: none;
-    padding: 20px;
+    padding:1.1em;
     display: flex;
+    margin: 0;
+    flex-wrap: wrap;
 }
 
 .botom ul li{
-    margin-left: 20px;
+    margin: .5em;
     border-radius: 5px;
     background-color: darkred;
-    padding: 20px;
+    padding: 1em;
 }
 
 .botom ul li:hover {
@@ -291,7 +299,8 @@ section.footer h2 {
 }
 
 main {
-    padding: 40px;
+    padding-inline: 11em;
+    padding-block-end: 2em;
 }
 
 .project {
@@ -312,14 +321,16 @@ main {
 
 .project-images {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
 }
 
 .project-images img {
-    width: 340px;
-    height: 250px;
-    margin: 0 10px;
+    width: 25em;
+    height: auto;
+    max-width: 100%;
+    margin: .5em .5em;
 }
 
 section.skills {
@@ -346,9 +357,13 @@ section.skills {
 
 .progress-bar {
     height: 100%;
-    background: darkslateblue;
+    background: linear-gradient(to right, darkslateblue, tomato);
     width: 0;
     transition: width 1s ease;
+}
+
+#progress-bar2 {
+    background: linear-gradient(to right, tomato, darkslateblue) !important;
 }
 
 .curriculum {
@@ -382,4 +397,35 @@ footer {
 
 footer p {
     font-size: 10px;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2em;
+    margin: 3em;
+    
+    img{
+        width: 28em;
+        height: auto;
+        max-width: 100%;
+    }
+
+    h2{
+        font-size: 2.5em;
+        color: darkred;
+        margin-top: .3em;
+        margin-bottom: 1em;
+    }
+}
+
+.introduccion{
+    display: flex;
+    margin-inline: 5em;
+    color: snow;
+    font-size: 2em;
+    text-align: justify;
 }
